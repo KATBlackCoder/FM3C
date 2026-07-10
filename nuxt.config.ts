@@ -1,12 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content'],
+  // @nuxtjs/seo doit précéder @nuxt/content (intégration asSeoCollection)
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/seo', '@nuxtjs/i18n', '@nuxt/content'],
 
   devtools: {
     enabled: true
   },
 
   css: ['~/assets/css/main.css'],
+
+  // URL de prod via NUXT_SITE_URL (Vercel) — domaine .ml pas encore confirmé
+  site: {
+    name: 'FM3C',
+    defaultLocale: 'fr'
+  },
 
   routeRules: {
     '/': { prerender: true }
