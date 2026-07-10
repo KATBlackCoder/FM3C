@@ -12,7 +12,8 @@ useHead({
     dir: computed(() => uiLocale.value?.dir ?? 'ltr')
   },
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', href: '/favicon.ico' },
+    { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
   ]
 })
 
@@ -27,8 +28,9 @@ useSeoMeta({
 <template>
   <UApp :locale="uiLocale">
     <UHeader
-      title="FM3C"
+      title="FMCCC"
       :to="localePath('/')"
+      class="after:absolute after:inset-x-0 after:-bottom-px after:h-[3px] after:bg-[linear-gradient(90deg,#18B339_0_33.4%,#F9D118_33.4%_66.7%,#BD292A_66.7%_100%)]"
     >
       <template #title>
         <AppLogo />
@@ -53,7 +55,7 @@ useSeoMeta({
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          FM3C © {{ new Date().getFullYear() }}
+          FMCCC © {{ new Date().getFullYear() }}
         </p>
       </template>
     </UFooter>

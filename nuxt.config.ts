@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   // URL de prod via NUXT_SITE_URL (Vercel) — domaine .ml pas encore confirmé
   site: {
-    name: 'FM3C',
+    name: 'FMCCC',
     defaultLocale: 'fr'
   },
 
@@ -30,6 +30,13 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+
+  // Cyrillique requis pour la locale RU (Inter/Oswald le fournissent)
+  fonts: {
+    defaults: {
+      subsets: ['latin', 'latin-ext', 'cyrillic']
     }
   },
 
