@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "news": "Actualités",
+    "clubs": "Clubs",
+    "competitions": "Compétitions",
+    "contact": "Contact"
+  },
+  "common": {
+    "languageSwitcher": "Langue"
+  },
+  "home": {
+    "title": "Fédération Malienne de Combat au Corps à Corps",
+    "description": "Site officiel de la FM3C."
+  },
+  "placeholder": {
+    "comingSoon": "Cette page est en cours de construction."
+  }
+}
