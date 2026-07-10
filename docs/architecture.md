@@ -32,7 +32,7 @@ Collections Nuxt Content, chacune avec un schéma (`content.config.ts`) pour gar
 
 ```
 content/
-  pages/            # Vitrine institutionnelle (FR-1, FR-2) — pages statiques par langue
+  pages/            # Vitrine institutionnelle (FR-1, FR-2)
     fr/about.md, en/about.md, ru/about.md
     fr/contact.md, ...
   blog/              # Actualités + comptes-rendus de compétition (FR-3 à FR-5)
@@ -43,6 +43,8 @@ content/
   competitions/       # Calendrier (FR-9, FR-10)
     competition-slug.yml (title trilingue FR/EN/RU — FR-12 ; dateStart, dateEnd, location en valeur unique ; status, blogRef?)
 ```
+
+**Une collection Nuxt Content par langue pour `pages` et `blog`** (`pages_fr`/`pages_en`/`pages_ru`, `blog_fr`/`blog_en`/`blog_ru`) — et non une seule collection avec des sous-dossiers `fr/en/ru` comme premier brouillon de ce document. C'est le pattern i18n actuellement recommandé par Nuxt Content v3 pour du contenu routable (`type: 'page'`) : chaque collection source son propre sous-dossier (`source.include: 'pages/fr/**'`, etc.) avec `prefix: ''` pour laisser `@nuxtjs/i18n` gérer le préfixe de route. Les composants interrogent `queryCollection(`pages_${locale}`)` de façon dynamique. `clubs` et `competitions` restent des collections uniques de type `data` (non routables), donc pas concernées par ce découpage — leur trilinguisme se gère par champ (`title` objet `{fr, en, ru}`), pas par collection.
 
 Points d'attention issus du PRD :
 - **FR-5** (photo optionnelle) : le schéma `blog` doit accepter `cover` comme champ optionnel, jamais requis.
