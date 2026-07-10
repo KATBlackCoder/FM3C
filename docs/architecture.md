@@ -71,7 +71,7 @@ Points d'attention issus du PRD :
 ## 5. i18n — points d'implémentation
 
 - Langue par défaut : FR. Détection navigateur en fallback, sélecteur explicite toujours visible (FR-11).
-- Structure de routing Nuxt i18n : préfixe de langue (`/fr/...`, `/en/...`, `/ru/...`) pour un SEO propre par langue (indexation distincte FR/EN/RU).
+- Structure de routing Nuxt i18n : stratégie `prefix_except_default` — le FR (langue par défaut, public majoritaire) vit à la racine (`/`, `/about`, ...), EN et RU sont préfixés (`/en/...`, `/ru/...`). Le SEO par langue reste propre (hreflang générés par le module) et la racine est une vraie page plutôt qu'une redirection — utile quand presse/partenaires pointent le domaine nu. La détection navigateur redirige toujours un visiteur EN/RU arrivant sur `/` vers sa langue.
 - Vérifier tôt (dès la maquette) que la police choisie couvre le cyrillique — sinon fallback système pour le RU (NFR PRD §4.5).
 - Process de traduction : le développeur traduit lui-même (contrainte du PRD) — prévoir un flux simple (ex. un article FR + ses deux traductions dans le même PR) plutôt qu'un outil de traduction séparé, pas justifié pour ce volume de contenu.
 

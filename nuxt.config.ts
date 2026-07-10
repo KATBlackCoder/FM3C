@@ -16,7 +16,10 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    // Anciennes URLs préfixées /fr (stratégie 'prefix' d'origine, déjà partagées)
+    '/fr': { redirect: { to: '/', statusCode: 301 } },
+    '/fr/**': { redirect: { to: '/**', statusCode: 301 } }
   },
 
   compatibilityDate: '2026-06-30',
@@ -37,7 +40,7 @@ export default defineNuxtConfig({
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' }
     ],
     defaultLocale: 'fr',
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
