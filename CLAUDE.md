@@ -27,6 +27,10 @@ Full product context lives in `docs/`:
 - **i18n**: `@nuxtjs/i18n`, FR (default) / EN / RU, prefixed routing (`/fr/...`, `/en/...`, `/ru/...`). Proper nouns (club name, city, competition location) are stored once, not per-language; prose/UI text (competition titles, region-filter labels, empty-state messages) must exist in all three languages per FR-12 — see `docs/architecture.md` §3.
 - **V1 scope** (see PRD §6.1): institutional showcase, blog/news, club directory filterable by region, competition calendar. No auth, no e-commerce, no structured competition results — those are V2 (PRD §6.2), not to be built prematurely.
 
+## Verification
+
+All verification of the running site (dev server routes, locale switching, rendering, key user journeys) must use the **Playwright MCP** (`playwright` server, added via `claude mcp add playwright npx @playwright/mcp@latest`) — not `curl`/`wget`/`node -e "fetch(...)"` workarounds. This matters especially for checking Cyrillic (RU) rendering and actual visual/interactive behavior, which a raw HTTP status check can't verify. If the Playwright MCP tools aren't available in a session (not yet loaded), say so explicitly rather than falling back to HTTP-only checks — ask for a session restart instead of approximating.
+
 ## Working conventions for this project
 
 - See `docs/skills.md` for the agent skills installed for this project and when to use each.
