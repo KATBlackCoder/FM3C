@@ -12,7 +12,11 @@ export default defineNuxtConfig({
   // URL de prod via NUXT_SITE_URL (Vercel) — domaine .ml pas encore confirmé
   site: {
     name: 'FMCCC',
-    defaultLocale: 'fr'
+    defaultLocale: 'fr',
+    // Câblé explicitement (recommandation nuxt-seo) plutôt que de compter sur la
+    // détection automatique du module à l'exécution — lu ici au build, fiable sur Vercel.
+    // Indexable par défaut ; NUXT_SITE_INDEXABLE=false coupe l'indexation (site placeholder).
+    indexable: process.env.NUXT_SITE_INDEXABLE !== 'false'
   },
 
   routeRules: {
