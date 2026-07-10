@@ -1,10 +1,10 @@
-# Réseaux sociaux — Site web FM3C
+# Réseaux sociaux — Site web FMCCC
 
 *Ce document ne fait pas partie du PRD ni de l'architecture technique : c'est une note de suivi sur une dépendance externe (comme le logo ou le budget, cf. `roadmap.md`) et sur comment l'intégrer une fois disponible. Rien ici n'est bloquant pour le lancement V1.*
 
 ## Constat actuel
 
-La FM3C ne possède **aucun compte de réseau social officiel** à ce jour — sa seule présence numérique reste le groupe WhatsApp fermé mentionné dans le brief. Il n'y a donc rien à intégrer au site pour l'instant.
+La FMCCC ne possède **aucun compte de réseau social officiel** à ce jour — sa seule présence numérique reste le groupe WhatsApp fermé mentionné dans le brief. Il n'y a donc rien à intégrer au site pour l'instant.
 
 ## Pourquoi ça reste important
 

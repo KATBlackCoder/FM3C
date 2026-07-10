@@ -1,4 +1,4 @@
-# Addendum — Site web FM3C
+# Addendum — Site web FMCCC
 
 *Contenu qui appuie le PRD (`prd.md`) sans y avoir sa place : hypothèses techniques, contexte concurrentiel, détails destinés à l'architecture plutôt qu'aux exigences produit.*
 
@@ -12,7 +12,7 @@ Issues du Product Brief — intentions de départ, pas des décisions fermes. À
 
 ## Contexte concurrentiel
 
-Recherche menée pendant le Product Brief : aucune présence indépendante (web ou réseaux sociaux) n'existe pour la FM3C à ce jour. Les sites de fédérations comparables dans des disciplines proches (FIAS-sambo, HSIF) restent eux-mêmes sommaires — il n'existe pas de modèle "vitrine + boutique + compte membre" abouti dans cette discipline à copier. La FM3C n'a donc pas de référence directe à égaler ou dépasser ; l'avantage vient d'arriver en premier avec un site sérieux et complet, pas d'une différenciation technique.
+Recherche menée pendant le Product Brief : aucune présence indépendante (web ou réseaux sociaux) n'existe pour la FMCCC à ce jour. Les sites de fédérations comparables dans des disciplines proches (FIAS-sambo, HSIF) restent eux-mêmes sommaires — il n'existe pas de modèle "vitrine + boutique + compte membre" abouti dans cette discipline à copier. La FMCCC n'a donc pas de référence directe à égaler ou dépasser ; l'avantage vient d'arriver en premier avec un site sérieux et complet, pas d'une différenciation technique.
 
 ## Contrainte V1.5 sur l'architecture
 

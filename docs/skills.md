@@ -1,4 +1,4 @@
-# Skills installées — Site web FM3C
+# Skills installées — Site web FMCCC
 
 *Skills agent installées globalement (`npx skills add ... -g`) pour ce projet, choisies pour le stack Nuxt/Vue défini dans `architecture.md`. Toutes tournent avec les pleins droits de l'agent — à relire avant usage sur du code sensible.*
 

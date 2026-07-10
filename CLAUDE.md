@@ -15,7 +15,7 @@ See `CHANGELOG.md` for what changed at each milestone.
 
 ## What this project is
 
-A multilingual (FR/EN/RU) institutional website for the **FM3C** (Fédération Malienne de Combat au Corps à Corps), a Malian sports federation founded March 2026. Solo-developer project, single stakeholder validation (the federation's president), no fixed deadline.
+A multilingual (FR/EN/RU) institutional website for the **FMCCC** (Fédération Malienne de Combat au Corps à Corps), a Malian sports federation founded March 2026. Solo-developer project, single stakeholder validation (the federation's president), no fixed deadline.
 
 Full product context lives in `docs/`:
 - `docs/product/brief.md` — product brief (problem, solution, stakeholders, risks)

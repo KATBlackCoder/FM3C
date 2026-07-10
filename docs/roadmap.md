@@ -1,4 +1,4 @@
-# Roadmap — Site web FM3C
+# Roadmap — Site web FMCCC
 
 *Découpage en jalons informels (le brief signale explicitement le risque qu'une V1 sans deadline "s'étire indéfiniment en solo" — ce roadmap sert de garde-fou, pas d'engagement rigide). Voir `architecture.md` pour les choix techniques et `product/prd.md` pour le détail des FR.*
 

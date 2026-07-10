@@ -1,4 +1,4 @@
-# FM3C — Site web
+# FMCCC — Site web
 
 Site web institutionnel multilingue (FR/EN/RU) de la Fédération Malienne de Combat au Corps à Corps.
 

@@ -1,23 +1,23 @@
 ---
-title: "Site web FM3C — Fédération Malienne de Combat au Corps à Corps"
+title: "Site web FMCCC — Fédération Malienne de Combat au Corps à Corps"
 status: draft
 created: 2026-07-08
 updated: 2026-07-09
 ---
 
-# PRD: Site web FM3C
+# PRD: Site web FMCCC
 
 *Working title — confirmé.*
 
 ## 0. Document Purpose
 
-Ce PRD cadre le site web de la FM3C pour la personne qui va le construire (toi-même, en solo) et pour le président de la fédération, Alioune Badara Traoré, seul décideur côté validation. Il s'appuie sur le Product Brief `brief-FM3C-2026-07-08` sans le dupliquer. Le vocabulaire est ancré dans le Glossaire (§3) ; les exigences fonctionnelles (FR) sont regroupées par feature et numérotées globalement ; les hypothèses non confirmées sont marquées `[ASSUMPTION]` inline et indexées en §9. Les choix techniques (framework, hébergement, nom de domaine) ne sont pas traités ici — voir `addendum.md`.
+Ce PRD cadre le site web de la FMCCC pour la personne qui va le construire (toi-même, en solo) et pour le président de la fédération, Alioune Badara Traoré, seul décideur côté validation. Il s'appuie sur le Product Brief `brief-FMCCC-2026-07-08` sans le dupliquer. Le vocabulaire est ancré dans le Glossaire (§3) ; les exigences fonctionnelles (FR) sont regroupées par feature et numérotées globalement ; les hypothèses non confirmées sont marquées `[ASSUMPTION]` inline et indexées en §9. Les choix techniques (framework, hébergement, nom de domaine) ne sont pas traités ici — voir `addendum.md`.
 
 ## 1. Vision
 
-La FM3C existe depuis mars 2026 mais reste invisible en ligne : sa seule trace numérique est un groupe WhatsApp fermé. Ce site devient le premier point de référence officiel et public de la fédération — pour ses clubs, ses athlètes actuels ou futurs, la presse malienne et russe, et les partenaires institutionnels (La Perspective Sahélienne, CNOSM, HSIF). Il ne s'agit pas de rattraper un concurrent : aucune fédération comparable dans cette discipline n'a de présence aboutie, donc être le premier à arriver avec un site sérieux et complet est en soi l'avantage.
+La FMCCC existe depuis mars 2026 mais reste invisible en ligne : sa seule trace numérique est un groupe WhatsApp fermé. Ce site devient le premier point de référence officiel et public de la fédération — pour ses clubs, ses athlètes actuels ou futurs, la presse malienne et russe, et les partenaires institutionnels (La Perspective Sahélienne, CNOSM, HSIF). Il ne s'agit pas de rattraper un concurrent : aucune fédération comparable dans cette discipline n'a de présence aboutie, donc être le premier à arriver avec un site sérieux et complet est en soi l'avantage.
 
-En V1, le site donne à la FM3C une existence publique crédible : qui elle est, ce qu'elle fait, où sont ses clubs, quand ont lieu ses compétitions — en français, anglais et russe. Il ne cherche pas encore à digitaliser les processus internes (inscriptions, paiements) : ceux-ci arrivent en V2, une fois la fédération visible et le site éprouvé. Une couche V1.5 rend ensuite le contenu du site pilotable par des personnes non-techniques à la fédération, sans dépendre indéfiniment du développeur.
+En V1, le site donne à la FMCCC une existence publique crédible : qui elle est, ce qu'elle fait, où sont ses clubs, quand ont lieu ses compétitions — en français, anglais et russe. Il ne cherche pas encore à digitaliser les processus internes (inscriptions, paiements) : ceux-ci arrivent en V2, une fois la fédération visible et le site éprouvé. Une couche V1.5 rend ensuite le contenu du site pilotable par des personnes non-techniques à la fédération, sans dépendre indéfiniment du développeur.
 
 À terme, ce site est reconnu par ses clubs, ses athlètes, la presse et les instances sportives internationales comme LA source d'information sur le combat au corps à corps au Mali — un actif qui grandit avec la fédération plutôt qu'une vitrine figée.
 
@@ -25,7 +25,7 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
 
 ### 2.1 Jobs To Be Done
 
-- **En tant que curieux/grand public**, comprendre ce qu'est la FM3C, la discipline, et ses bienfaits — pour se faire une première opinion crédible. *(fonctionnel, informationnel)*
+- **En tant que curieux/grand public**, comprendre ce qu'est la FMCCC, la discipline, et ses bienfaits — pour se faire une première opinion crédible. *(fonctionnel, informationnel)*
 - **En tant qu'athlète potentiel**, trouver un club affilié près de chez moi et savoir comment le rejoindre. *(fonctionnel)*
 - **En tant que journaliste**, obtenir une information fiable et citable sur la fédération et ses compétitions, dans ma langue. *(fonctionnel)*
 - **En tant que responsable de club affilié**, être visible et légitimé officiellement par la fédération. *(social/émotionnel)*
@@ -40,10 +40,10 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
 
 ### 2.3 Key User Journeys
 
-- **UJ-1. Ibrahim tombe sur le site en cherchant "FM3C" par curiosité.**
+- **UJ-1. Ibrahim tombe sur le site en cherchant "FMCCC" par curiosité.**
   - **Persona + contexte :** Ibrahim, Malien curieux du sport, entend parler d'une nouvelle fédération et la cherche sur un moteur de recherche.
   - **Entrée :** non authentifié, arrive depuis un moteur de recherche.
-  - **Parcours :** le site apparaît en premier résultat → il consulte les actualités (avant/après des événements), les compétitions passées et médailles gagnées → il repère les contacts → il pose des questions à une chatbox IA sur la FM3C.
+  - **Parcours :** le site apparaît en premier résultat → il consulte les actualités (avant/après des événements), les compétitions passées et médailles gagnées → il repère les contacts → il pose des questions à une chatbox IA sur la FMCCC.
   - **Climax :** la chatbox répond de façon claire — il comprend ce qu'est la discipline et ce qu'elle lui apporte.
   - **Résolution :** il repart avec une image positive et crédible de la fédération. *("c'est très intéressant")*
   - **Note :** la chatbox IA est une idée V2, exploratoire (voir §6.2) — ce parcours n'est réalisable dans sa forme complète qu'une fois la chatbox construite.
@@ -60,7 +60,7 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
   - **Persona + contexte :** Elena `[ASSUMPTION: nationalité/média précis — non confirmés]`, couvre la coopération sportive Mali-Russie.
   - **Entrée :** non authentifiée, arrive via un lien partagé ou une recherche.
   - **Parcours :** elle bascule le site en russe → elle consulte la vitrine institutionnelle (mission, lien Mali-Russie) → elle va sur le blog pour trouver le compte-rendu de la dernière compétition → elle cherche un contact presse.
-  - **Climax :** elle trouve un compte-rendu fiable en russe, avec une photo des résultats et assez de contexte pour citer la FM3C.
+  - **Climax :** elle trouve un compte-rendu fiable en russe, avec une photo des résultats et assez de contexte pour citer la FMCCC.
   - **Résolution :** elle contacte la fédération ou cite directement le site comme source.
   - **Règle :** un compte-rendu de compétition peut inclure une photo des résultats pour animer le contenu, mais ce n'est pas obligatoire (voir FR-5).
 
@@ -72,9 +72,9 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
   - **Résolution :** elle se sent légitimée, partage le lien de la fiche club.
   - **Cas limite :** si une info est incorrecte, elle envoie un message WhatsApp signalant l'erreur — pas de correction en libre-service en V1. En V2 (avec authentification), chaque responsable de club pourra gérer/corriger les infos de son propre club directement sur le site.
 
-- **UJ-5. Un responsable de la HSIF vérifie le sérieux de la FM3C avant une reconnaissance officielle.**
-  - **Persona + contexte :** Sergueï `[ASSUMPTION: nom/rôle précis — non confirmés]`, responsable HSIF, reçoit une demande de reconnaissance de la FM3C.
-  - **Entrée :** non authentifié, arrive via un lien transmis par la FM3C ou La Perspective Sahélienne.
+- **UJ-5. Un responsable de la HSIF vérifie le sérieux de la FMCCC avant une reconnaissance officielle.**
+  - **Persona + contexte :** Sergueï `[ASSUMPTION: nom/rôle précis — non confirmés]`, responsable HSIF, reçoit une demande de reconnaissance de la FMCCC.
+  - **Entrée :** non authentifié, arrive via un lien transmis par la FMCCC ou La Perspective Sahélienne.
   - **Parcours :** il consulte la vitrine (mission, structure, historique) → il regarde le calendrier et le blog pour vérifier une activité réelle → il consulte l'annuaire des clubs pour évaluer l'ampleur de la fédération → il cherche un contact officiel.
   - **Climax :** il constate une fédération structurée et active, avec du contenu en russe.
   - **Résolution :** il engage une correspondance officielle avec une crédibilité déjà établie.
@@ -82,20 +82,20 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
 
 ## 3. Glossary
 
-- **FM3C** — Fédération Malienne de Combat au Corps à Corps, fondée mars 2026 à Bamako.
-- **Combat au corps à corps** — la discipline sportive représentée par la FM3C, équivalent du Rukopashny Boy russe.
-- **HSIF** — fédération internationale de référence pour la discipline ; interlocuteur pour la reconnaissance internationale de la FM3C.
-- **CNOSM** — instance sportive nationale malienne, liée à la FM3C via son directeur technique.
-- **La Perspective Sahélienne** — association portant la coopération sportive Mali-Russie à l'origine de la FM3C.
-- **Club affilié** — club local reconnu par la FM3C, listé dans l'Annuaire des clubs. L'affiliation elle-même se fait hors-ligne (contact WhatsApp) en V1.
+- **FMCCC** — Fédération Malienne de Combat au Corps à Corps, fondée mars 2026 à Bamako.
+- **Combat au corps à corps** — la discipline sportive représentée par la FMCCC, équivalent du Rukopashny Boy russe.
+- **HSIF** — fédération internationale de référence pour la discipline ; interlocuteur pour la reconnaissance internationale de la FMCCC.
+- **CNOSM** — instance sportive nationale malienne, liée à la FMCCC via son directeur technique.
+- **La Perspective Sahélienne** — association portant la coopération sportive Mali-Russie à l'origine de la FMCCC.
+- **Club affilié** — club local reconnu par la FMCCC, listé dans l'Annuaire des clubs. L'affiliation elle-même se fait hors-ligne (contact WhatsApp) en V1.
 - **Annuaire des clubs** — page du site listant les Clubs affiliés, filtrable par région.
-- **Compétition** — événement sportif organisé ou reconnu par la FM3C, apparaissant au Calendrier des compétitions et, une fois passé, dans un Compte-rendu de compétition sur le Blog.
+- **Compétition** — événement sportif organisé ou reconnu par la FMCCC, apparaissant au Calendrier des compétitions et, une fois passé, dans un Compte-rendu de compétition sur le Blog.
 - **Calendrier des compétitions** — page listant les Compétitions à venir (et passées).
-- **Blog / Actualités** — flux de publications de la FM3C : annonces, communiqués, Comptes-rendus de compétition.
+- **Blog / Actualités** — flux de publications de la FMCCC : annonces, communiqués, Comptes-rendus de compétition.
 - **Compte-rendu de compétition** — publication du Blog documentant une Compétition passée ; peut inclure une photo des résultats, à titre optionnel (FR-5).
-- **Vitrine institutionnelle** — ensemble des pages présentant la FM3C (mission, histoire, structure, coopération Mali-Russie, contacts).
+- **Vitrine institutionnelle** — ensemble des pages présentant la FMCCC (mission, histoire, structure, coopération Mali-Russie, contacts).
 - **Éditeur de contenu** — rôle non-développeur, introduit en V1.5, pouvant créer des publications de Blog via une interface d'administration.
-- **Chatbox IA** — assistant conversationnel capable de répondre aux questions sur la FM3C ; idée V2 exploratoire, non-obligatoire (un "plus" facultatif, pas une exigence de la V2), hors scope V1.
+- **Chatbox IA** — assistant conversationnel capable de répondre aux questions sur la FMCCC ; idée V2 exploratoire, non-obligatoire (un "plus" facultatif, pas une exigence de la V2), hors scope V1.
 - **Compte utilisateur** — identité authentifiée sur le site, introduite en V2 ; ouverte aux Athlètes, Clubs, et au grand public (compte limité).
 
 ## 4. Features
@@ -104,13 +104,13 @@ En V1, le site donne à la FM3C une existence publique crédible : qui elle est,
 
 ### 4.1 Vitrine institutionnelle
 
-**Description :** Pages statiques présentant la FM3C — mission, histoire, structure, coopération Mali-Russie, contacts officiels. Réalise UJ-1, UJ-3, UJ-5. Le lien avec le partenaire russe doit être présenté comme un partenariat sportif, traité avec soin, sans excès de mise en avant `[ASSUMPTION: ton exact à valider avec le président — voir Aesthetic and Tone]`.
+**Description :** Pages statiques présentant la FMCCC — mission, histoire, structure, coopération Mali-Russie, contacts officiels. Réalise UJ-1, UJ-3, UJ-5. Le lien avec le partenaire russe doit être présenté comme un partenariat sportif, traité avec soin, sans excès de mise en avant `[ASSUMPTION: ton exact à valider avec le président — voir Aesthetic and Tone]`.
 
 **Functional Requirements :**
 
 #### FR-1: Présentation de la fédération
 
-Un visiteur peut consulter la mission, l'histoire et la structure de la FM3C. Réalise UJ-1, UJ-5.
+Un visiteur peut consulter la mission, l'histoire et la structure de la FMCCC. Réalise UJ-1, UJ-5.
 
 **Consequences (testable):**
 - La page présente au minimum : date de fondation, mission, structure organisationnelle, lien avec la coopération Mali-Russie.
@@ -153,13 +153,13 @@ Un compte-rendu de compétition publié sur le Blog peut inclure une ou plusieur
 
 ### 4.3 Annuaire des clubs affiliés
 
-**Description :** Répertoire des clubs affiliés à la FM3C, filtrable par région. Réalise UJ-2, UJ-4, UJ-5.
+**Description :** Répertoire des clubs affiliés à la FMCCC, filtrable par région. Réalise UJ-2, UJ-4, UJ-5.
 
 **Functional Requirements :**
 
 #### FR-6: Liste des clubs affiliés
 
-Un visiteur peut parcourir la liste des clubs affiliés à la FM3C, chacun affichant nom, région/localisation et contact. Réalise UJ-4, UJ-5.
+Un visiteur peut parcourir la liste des clubs affiliés à la FMCCC, chacun affichant nom, région/localisation et contact. Réalise UJ-4, UJ-5.
 
 #### FR-7: Recherche par région
 
@@ -178,7 +178,7 @@ Si aucun club affilié n'existe dans la région sélectionnée, le système affi
 
 ### 4.4 Calendrier des compétitions
 
-**Description :** Page listant les compétitions à venir (et passées) organisées ou reconnues par la FM3C. Réalise UJ-2, UJ-5.
+**Description :** Page listant les compétitions à venir (et passées) organisées ou reconnues par la FMCCC. Réalise UJ-2, UJ-5.
 
 **Functional Requirements :**
 
@@ -217,8 +217,8 @@ Le contenu public (Vitrine, Blog, Annuaire, Calendrier) est disponible en franç
 
 ## 5. Non-Goals (Explicit)
 
-- La FM3C ne devient pas, en V1, une plateforme d'inscription ou de gestion d'athlètes/clubs — c'est le rôle de la V2.
-- La FM3C ne publie pas, en V1, de classements ou résultats détaillés compétition par compétition — seul un compte-rendu avec photo est prévu.
+- La FMCCC ne devient pas, en V1, une plateforme d'inscription ou de gestion d'athlètes/clubs — c'est le rôle de la V2.
+- La FMCCC ne publie pas, en V1, de classements ou résultats détaillés compétition par compétition — seul un compte-rendu avec photo est prévu.
 - Le site n'est pas, en V1, une boutique en ligne — la vente d'équipements est V2.
 - Le site ne dépend pas d'un compte utilisateur pour consulter son contenu public en V1 — tout est accessible sans authentification.
 
@@ -239,13 +239,13 @@ Le contenu public (Vitrine, Blog, Annuaire, Calendrier) est disponible en franç
 - **Interface d'administration / Éditeur de contenu (V1.5)** — permettra à des personnes non-développeuses de créer du contenu Blog une fois le site en ligne et stable. `[NOTE FOR PM: l'architecture V1 doit être conçue pour absorber cette extension sans refonte majeure — contrainte à porter en architecture, pas en FR V1.]`
 - **Authentification et comptes utilisateurs (V2)** — ouverte aux athlètes, aux clubs (gestion/correction de leurs propres infos), et au grand public via un compte limité donnant accès à : notifications sur les compétitions, commentaires sur les actualités. *(L'achat en ligne a été retiré des bénéfices du compte limité tant que le paiement en ligne — hors scope V2, voir brief — n'est pas cadré.)*
 - **Boutique e-commerce (V2+, sans calendrier fixe)** — vente d'équipements officiels, liée aux Comptes utilisateur. Construite quand le besoin réel de vendre se fera sentir, pas systématiquement au même moment que l'authentification.
-- **Chatbox IA (V2, exploratoire, facultative)** — assistant conversationnel répondant aux questions sur la FM3C ; un "plus" non-obligatoire, pas une exigence de la V2. `[NOTE FOR PM: idée volontairement mise de côté, pas encore engagée — à réévaluer selon les priorités post-lancement.]`
+- **Chatbox IA (V2, exploratoire, facultative)** — assistant conversationnel répondant aux questions sur la FMCCC ; un "plus" non-obligatoire, pas une exigence de la V2. `[NOTE FOR PM: idée volontairement mise de côté, pas encore engagée — à réévaluer selon les priorités post-lancement.]`
 
 ## 7. Success Metrics
 
 Aucune métrique chiffrée n'est fixée à ce stade (décision du brief). Le critère retenu pour la V1 est qualitatif :
 
-- **SM-1** : Le site est en ligne, fonctionne correctement dans les trois langues, et reflète fidèlement l'identité de la FM3C — validé par la satisfaction d'Alioune Badara Traoré. Valide l'ensemble des FR de la V1.
+- **SM-1** : Le site est en ligne, fonctionne correctement dans les trois langues, et reflète fidèlement l'identité de la FMCCC — validé par la satisfaction d'Alioune Badara Traoré. Valide l'ensemble des FR de la V1.
 
 Des métriques plus mesurables (visibilité, adhésions de clubs, reprises presse) pourront être définies après la mise en ligne et un premier retour d'usage — voir Open Questions.
 
@@ -294,7 +294,7 @@ Des métriques plus mesurables (visibilité, adhésions de clubs, reprises press
 
 ## Stakeholders and Approvals
 
-- **Décideur unique** : Alioune Badara Traoré, président de la FM3C. Toute validation de design, fonctionnalités ou contenu passe par lui.
+- **Décideur unique** : Alioune Badara Traoré, président de la FMCCC. Toute validation de design, fonctionnalités ou contenu passe par lui.
 - **Développement** : porté en solo par l'utilisateur, sans équipe design ou contenu séparée en V1.
 
 ## Constraints and Guardrails

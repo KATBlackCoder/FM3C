@@ -1,4 +1,4 @@
-# Architecture — Site web FM3C
+# Architecture — Site web FMCCC
 
 *Complète `product/prd.md` et `product/addendum.md`. Ce document tranche les hypothèses techniques laissées ouvertes par le brief (§ Hypothèses techniques de départ) et sert de référence pendant le développement solo.*
 
@@ -66,7 +66,7 @@ Points d'attention issus du PRD :
 **Vidéo : hors scope V1, reportée à une mise à jour future.**
 - Décision : pas d'intégration vidéo (YouTube ou autre) en V1. Un compte/chaîne dédié à la fédération demande une création (compte Google, chaîne, identité visuelle de la chaîne) et un minimum de gestion dans la durée (uploads, modération, accès partagé avec la fédération) — une charge en plus jugée disproportionnée pour un dev solo au lancement, alors que FR-5 (photo optionnelle) couvre déjà le besoin minimal de compte-rendu de compétition.
 - Recherche de comparables (fédérations HSIF et FIAS-Sambo, déjà identifiées dans le brief) : HSIF, la fédération de référence directe pour cette discipline, n'a même pas de section vidéo sur son site et s'appuie sur Instagram ; FIAS (plus établie) a une chaîne YouTube dédiée et une page "Vidéo" sur son site qui agrège ces vidéos. Ce sont deux étapes de maturité différentes, ce qui confirme que l'intégration vidéo est un ajout logique une fois la fédération et le site plus établis, pas un prérequis de lancement.
-- **Quand ce sera repris** : chaîne YouTube officielle FM3C (compte dédié à la fédération, pas personnel — voir `roadmap.md`), champ optionnel `videoId`/`videoUrl` dans le frontmatter `blog/*.md`, résolu en embed au rendu, même logique que `cover` (FR-5). Pas de travail d'architecture supplémentaire requis le moment venu — c'est un ajout de champ optionnel au schéma existant, pas une refonte.
+- **Quand ce sera repris** : chaîne YouTube officielle FMCCC (compte dédié à la fédération, pas personnel — voir `roadmap.md`), champ optionnel `videoId`/`videoUrl` dans le frontmatter `blog/*.md`, résolu en embed au rendu, même logique que `cover` (FR-5). Pas de travail d'architecture supplémentaire requis le moment venu — c'est un ajout de champ optionnel au schéma existant, pas une refonte.
 
 ## 5. i18n — points d'implémentation
 
