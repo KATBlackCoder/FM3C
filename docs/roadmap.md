@@ -4,13 +4,13 @@
 
 ## Phase 0 — Fondations (avant tout contenu réel)
 
-- [ ] Init projet Nuxt 4 + modules (`@nuxt/content`, `@nuxtjs/i18n`, `@nuxtjs/seo`)
-- [ ] Config i18n (FR/EN/RU, routing préfixé, sélecteur de langue)
-- [ ] Schémas de collections Nuxt Content (`pages`, `blog`, `clubs`, `competitions`) — cf. architecture.md §3
-- [ ] Layout global + navigation (Accueil, Vitrine, Actualités, Clubs, Compétitions, Contact — cf. PRD Information Architecture)
-- [ ] Déploiement Vercel branché sur le repo (preview deployments actifs dès ce stade, pour montrer l'avancement au président)
+- [x] Init projet Nuxt 4 + modules (`@nuxt/content`, `@nuxtjs/i18n`, `@nuxtjs/seo`)
+- [x] Config i18n (FR/EN/RU, `prefix_except_default` — FR à la racine, cf. architecture.md §5 — sélecteur de langue)
+- [x] Schémas de collections Nuxt Content (`pages`, `blog`, `clubs`, `competitions`) — cf. architecture.md §3
+- [x] Layout global + navigation (Accueil, Vitrine, Actualités, Clubs, Compétitions, Contact — cf. PRD Information Architecture)
+- [x] Déploiement Vercel branché sur le repo (preview deployments actifs dès ce stade, pour montrer l'avancement au président)
 
-**Jalon** : `npm run dev` affiche un site vide mais navigable dans les 3 langues, déployé en preview sur Vercel.
+**Jalon : ✅ atteint le 2026-07-10** — site vide mais navigable dans les 3 langues, en ligne sur https://fm-3-c.vercel.app (production auto-déployée depuis `main`).
 
 ## Phase 1 — Vitrine institutionnelle (FR-1, FR-2)
 

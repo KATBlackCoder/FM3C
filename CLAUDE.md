@@ -4,7 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project state
 
-This repository currently contains **planning only** — no application code has been scaffolded yet (no `package.json`, no `app/` or `src/`). Do not assume a build/lint/test toolchain exists; check for one before running commands like `npm run build` or `npm test`. When the Nuxt project is scaffolded, this file should be updated with the actual commands.
+Phase 0 (Fondations) of `docs/roadmap.md` is **complete** (2026-07-10): the Nuxt 4 app is scaffolded, navigable in all three languages, and deployed at https://fm-3-c.vercel.app (auto-deploy from `main` via the Vercel git integration — every push to `main` goes to production). Next up is Phase 1 (institutional pages with real content). Pages are placeholders and `content/` has no files yet; collections are defined in `content.config.ts`.
+
+Commands (pnpm, not npm):
+- `pnpm dev` — dev server on http://localhost:3000 (usually already running; check before starting another — the Nuxt CLI locks the dir, bypass with `NUXT_IGNORE_LOCK=1 PORT=3001` for a second diagnostic instance)
+- `pnpm lint` / `pnpm typecheck` — both run in CI on every push; run them before committing
+- `pnpm build` / `pnpm preview` — production build / preview
+
+See `CHANGELOG.md` for what changed at each milestone.
 
 ## What this project is
 
