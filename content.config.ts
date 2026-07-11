@@ -6,9 +6,11 @@ const pageSchema = z.object({
   description: z.string().optional()
 })
 
+// Pas de champ `excerpt` : nom réservé par Nuxt Content v3 (AST généré via
+// <!--more-->) qui écrase toute valeur de frontmatter — `description` sert
+// d'extrait dans les listes (FR-3) et de meta SEO.
 const blogSchema = pageSchema.extend({
   date: z.date(),
-  excerpt: z.string().optional(),
   cover: z.string().optional(),
   competitionRef: z.string().optional()
 })

@@ -19,13 +19,6 @@ export default defineNuxtConfig({
     indexable: process.env.NUXT_SITE_INDEXABLE !== 'false'
   },
 
-  routeRules: {
-    '/': { prerender: true },
-    // Anciennes URLs préfixées /fr (stratégie 'prefix' d'origine, déjà partagées)
-    '/fr': { redirect: { to: '/', statusCode: 301 } },
-    '/fr/**': { redirect: { to: '/**', statusCode: 301 } }
-  },
-
   // Connecteur node:sqlite (natif) : better-sqlite3 ne charge pas ses bindings
   // dans les fonctions Vercel Node 22/24 (nuxt/content#3689) — 500 sur toute
   // requête de contenu en prod. Node ≥ 22.5 requis (Vercel et local OK).
@@ -33,6 +26,13 @@ export default defineNuxtConfig({
     experimental: {
       sqliteConnector: 'native'
     }
+  },
+
+  routeRules: {
+    '/': { prerender: true },
+    // Anciennes URLs préfixées /fr (stratégie 'prefix' d'origine, déjà partagées)
+    '/fr': { redirect: { to: '/', statusCode: 301 } },
+    '/fr/**': { redirect: { to: '/**', statusCode: 301 } }
   },
 
   compatibilityDate: '2026-06-30',

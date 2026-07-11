@@ -31,6 +31,18 @@
     "pendingValue": "À confirmer",
     "pendingNote": "Les coordonnées officielles détaillées de la fédération seront publiées prochainement sur cette page."
   },
+  "news": {
+    "description": "Annonces, comptes-rendus de compétitions et communiqués de la FMCCC.",
+    "empty": {
+      "title": "Aucune actualité pour le moment",
+      "description": "Les annonces et comptes-rendus de la fédération seront publiés ici."
+    },
+    "unavailable": {
+      "title": "Article introuvable",
+      "description": "Cet article n'existe pas ou n'est pas encore disponible dans cette langue."
+    },
+    "back": "Retour aux actualités"
+  },
   "footer": {
     "tagline": "Fédération Malienne de Combat au Corps à Corps — Bamako, Mali",
     "contact": "Nous contacter"

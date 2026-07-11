@@ -31,6 +31,18 @@
     "pendingValue": "To be confirmed",
     "pendingNote": "The federation's detailed official contact details will be published on this page soon."
   },
+  "news": {
+    "description": "FMCCC announcements, competition reports and official statements.",
+    "empty": {
+      "title": "No news yet",
+      "description": "The federation's announcements and competition reports will be published here. Articles are currently available in French."
+    },
+    "unavailable": {
+      "title": "Article not found",
+      "description": "This article does not exist or is not yet available in this language."
+    },
+    "back": "Back to news"
+  },
   "footer": {
     "tagline": "Malian Federation of Hand-to-Hand Fighting — Bamako, Mali",
     "contact": "Contact us"

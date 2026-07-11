@@ -36,7 +36,7 @@ content/
     fr/about.md, en/about.md, ru/about.md
     fr/contact.md, ...
   blog/              # Actualités + comptes-rendus de compétition (FR-3 à FR-5)
-    fr/2026-03-yyy.md  (frontmatter: title, date, excerpt, cover?, competitionRef?)
+    fr/2026-03-yyy.md  (frontmatter: title, date, description — sert d'extrait de liste, `excerpt` étant un nom réservé de Nuxt Content v3 —, cover?, competitionRef?)
     ...
   clubs/             # Annuaire (FR-6 à FR-8)
     club-slug.yml     (name, region, city, contact — noms propres, pas de traduction ; le libellé du filtre région et le message "aucun club" (FR-8) sont eux trilingues, gérés côté UI/i18n)
