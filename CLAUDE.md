@@ -34,6 +34,19 @@ Full product context lives in `docs/`:
 - **i18n**: `@nuxtjs/i18n`, FR (default) / EN / RU, `prefix_except_default` routing — FR at the root (`/`, `/about`, ...), EN/RU prefixed (`/en/...`, `/ru/...`). Proper nouns (club name, city, competition location) are stored once, not per-language; prose/UI text (competition titles, region-filter labels, empty-state messages) must exist in all three languages per FR-12 — see `docs/architecture.md` §3.
 - **V1 scope** (see PRD §6.1): institutional showcase, blog/news, club directory filterable by region, competition calendar. No auth, no e-commerce, no structured competition results — those are V2 (PRD §6.2), not to be built prematurely.
 
+## Work cycle (per task)
+
+For any non-trivial change (new page, component, content, config), work through these phases in order:
+
+1. **Analyze** — read the relevant product docs (`docs/architecture.md`, PRD) and the existing code before implementing.
+2. **Plan** — state explicit acceptance criteria before coding: what will be verified at the end, and how.
+3. **Execute** — implement following the conventions in this file and `docs/skills.md`.
+4. **Validate** — `pnpm lint` + `pnpm typecheck` must pass.
+5. **Verify** — in-browser via Playwright MCP (see Verification below); the detailed procedure is the project skill `fmccc-verify` (`.claude/skills/fmccc-verify/`). Screenshots are the proof of done.
+6. **Examine** — run `/code-review` on the diff before committing; fix or explicitly defer each finding.
+
+Trivial changes (typo, single i18n key, docs-only edit) may skip 2 and 6 — but never 4–5 when a rendered page is touched. Do not push to `main` without explicit approval: every push auto-deploys to production.
+
 ## Verification
 
 All verification of the running site (dev server routes, locale switching, rendering, key user journeys) must use the **Playwright MCP** (`playwright` server, added via `claude mcp add playwright npx @playwright/mcp@latest`) — not `curl`/`wget`/`node -e "fetch(...)"` workarounds. This matters especially for checking Cyrillic (RU) rendering and actual visual/interactive behavior, which a raw HTTP status check can't verify. If the Playwright MCP tools aren't available in a session (not yet loaded), say so explicitly rather than falling back to HTTP-only checks — ask for a session restart instead of approximating.

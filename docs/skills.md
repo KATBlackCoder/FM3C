@@ -15,6 +15,12 @@
 | **make-interfaces-feel-better** | `jakubkrehel/make-interfaces-feel-better` | Détails de polish UI : animations, hover states, ombres, typographie, micro-interactions, alignement optique. À utiliser en finition de composants, pas en structure — pertinent pour donner au site un rendu "sérieux" plutôt qu'amateur, cohérent avec l'objectif du brief (crédibilité auprès de la presse et des partenaires). |
 | **git-commit** | `github/awesome-copilot` (officiel GitHub) | Analyse le diff, propose un message de commit conventionnel (type/scope/description) et un staging cohérent par groupe logique. À utiliser à chaque commit plutôt que rédiger le message à la main. |
 
+## Skills projet (versionnées dans le repo)
+
+| Skill | Emplacement | Utilité |
+|---|---|---|
+| **fmccc-verify** | `.claude/skills/fmccc-verify/` | Procédure détaillée de vérification en navigateur (Playwright MCP) : routes × 3 locales, switch de langue côté client, rendu cyrillique, preuves par screenshot. C'est l'étape 5 du cycle de travail défini dans `CLAUDE.md`. |
+
 ## Quand les solliciter
 
 - **Scaffolding / nouvelle feature** → `nuxt` + `vue` en premier réflexe.
@@ -22,6 +28,7 @@
 - **Contenu (vitrine, blog, clubs, calendrier)** → `nuxt-content`.
 - **Avant chaque déploiement touchant une page publique** → `seo` + `nuxt-seo`.
 - **Phase 5 du roadmap (polish transverse avant lancement)** → `accessibility`, `playwright-cli`, `make-interfaces-feel-better`.
+- **Après tout changement touchant une page rendue, du contenu, l'i18n ou le SEO** → `fmccc-verify` (avant de committer).
 - **À chaque commit** → `git-commit`.
 
 Pas de skill de gestion de projet/agents multiples ici par choix : voir la discussion qui a mené au retrait de BMAD (jugé overkill pour un dev solo à scope fixe) — `docs/architecture.md` et `docs/roadmap.md` remplacent ce rôle de pilotage.

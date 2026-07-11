@@ -18,7 +18,13 @@ logs
 .DS_Store
 .fleet
 .idea
-.claude
+
+# Claude Code : tout est local (settings, skills installées via skills-lock.json),
+# sauf les skills projet, whitelistées une par une
+.claude/*
+!.claude/skills
+.claude/skills/*
+!.claude/skills/fmccc-verify
 
 # Local env files
 .env
