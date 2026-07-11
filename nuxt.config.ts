@@ -29,13 +29,24 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true },
     // Anciennes URLs préfixées /fr (stratégie 'prefix' d'origine, déjà partagées)
     '/fr': { redirect: { to: '/', statusCode: 301 } },
     '/fr/**': { redirect: { to: '/**', statusCode: 301 } }
   },
 
   compatibilityDate: '2026-06-30',
+
+  // Tout le site est pré-rendu au build (architecture.md §1 : rendu statique
+  // pour les pages vitrine/contenu) : HTML + payloads servis par le CDN Vercel
+  // au lieu d'une fonction serverless par requête (TTFB 0,9-2,4 s constaté).
+  // Le crawler part des trois racines de locale — le sélecteur de langue est
+  // un menu (pas des liens), donc /en et /ru doivent être listés explicitement.
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/en', '/ru']
+    }
+  },
 
   eslint: {
     config: {

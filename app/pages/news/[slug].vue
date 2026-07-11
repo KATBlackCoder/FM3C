@@ -5,10 +5,10 @@ const localePath = useLocalePath()
 
 const slug = computed(() => String(route.params.slug))
 
+// Clé par locale + slug : requise pour le prerender (cf. app/pages/about.vue)
 const { data: post } = await useAsyncData(
-  () => `news-${slug.value}`,
-  () => queryCollection(`blog_${locale.value}`).path(`/${slug.value}`).first(),
-  { watch: [locale] }
+  () => `news-${locale.value}-${slug.value}`,
+  () => queryCollection(`blog_${locale.value}`).path(`/${slug.value}`).first()
 )
 
 const formattedDate = computed(() => post.value

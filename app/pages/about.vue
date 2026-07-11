@@ -1,10 +1,13 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
+// La clé DOIT inclure la locale : une clé statique est partagée entre les
+// routes /about, /en/about et /ru/about par le cache de payload du prerender
+// (contenu FR servi aux trois locales, ou null selon la concurrence).
+// Clé réactive → re-fetch automatique au changement de langue côté client.
 const { data: page } = await useAsyncData(
-  'page-about',
-  () => queryCollection(`pages_${locale.value}`).path('/about').first(),
-  { watch: [locale] }
+  () => `page-about-${locale.value}`,
+  () => queryCollection(`pages_${locale.value}`).path('/about').first()
 )
 
 // translationPending ne vaut que pour une locale sans document — pas pour un

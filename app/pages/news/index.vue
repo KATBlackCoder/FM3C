@@ -2,13 +2,13 @@
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
+// Clé par locale : requise pour le prerender (cf. app/pages/about.vue)
 const { data: posts } = await useAsyncData(
-  'news-list',
+  () => `news-list-${locale.value}`,
   () => queryCollection(`blog_${locale.value}`)
     .select('path', 'title', 'description', 'date', 'cover')
     .order('date', 'DESC')
-    .all(),
-  { watch: [locale] }
+    .all()
 )
 
 const formatDate = (date: string | Date) =>
