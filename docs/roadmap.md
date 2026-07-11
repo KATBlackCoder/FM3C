@@ -14,9 +14,9 @@
 
 ## Phase 1 — Vitrine institutionnelle (FR-1, FR-2)
 
-- [ ] Page À propos : mission, histoire, structure, coopération Mali-Russie (ton à valider avec le président — `[ASSUMPTION]` PRD §9)
-- [ ] Contacts officiels visibles (page + footer global)
-- [ ] Contenu FR rédigé, EN + RU traduits
+- [x] Page À propos : mission, histoire, structure, coopération Mali-Russie (rédigée en FR — ton à valider avec le président — `[ASSUMPTION]` PRD §9)
+- [x] Contacts officiels visibles (page + footer global) — coordonnées réelles (téléphone/email) à fournir par le président, placeholders explicites en attendant
+- [ ] Contenu FR rédigé, EN + RU traduits (EN/RU après validation du FR par le président)
 
 **Jalon** : le président peut visiter le site et se reconnaître dans la présentation de la fédération.
 

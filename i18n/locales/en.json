@@ -12,7 +12,28 @@
   },
   "home": {
     "title": "Malian Federation of Hand-to-Hand Fighting",
-    "description": "Official website of the FMCCC."
+    "description": "Official website of the FMCCC.",
+    "ctaAbout": "Discover the federation",
+    "ctaContact": "Contact us"
+  },
+  "contact": {
+    "description": "Officially contact the FMCCC: club affiliation, competition participation, press or partnerships.",
+    "hq": {
+      "label": "Headquarters",
+      "value": "Bamako, Mali"
+    },
+    "phone": {
+      "label": "Phone / WhatsApp"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "pendingValue": "To be confirmed",
+    "pendingNote": "The federation's detailed official contact details will be published on this page soon."
+  },
+  "footer": {
+    "tagline": "Malian Federation of Hand-to-Hand Fighting — Bamako, Mali",
+    "contact": "Contact us"
   },
   "placeholder": {
     "comingSoon": "This page is under construction.",

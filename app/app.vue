@@ -55,8 +55,21 @@ useSeoMeta({
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          FMCCC © {{ new Date().getFullYear() }}
+          {{ t('footer.tagline') }}
         </p>
+      </template>
+
+      <p class="text-sm text-muted">
+        FMCCC © {{ new Date().getFullYear() }}
+      </p>
+
+      <template #right>
+        <ULink
+          :to="localePath('/contact')"
+          class="text-sm text-muted hover:text-highlighted"
+        >
+          {{ t('footer.contact') }}
+        </ULink>
       </template>
     </UFooter>
   </UApp>

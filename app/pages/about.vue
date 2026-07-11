@@ -7,11 +7,17 @@ const { data: page } = await useAsyncData(
   { watch: [locale] }
 )
 
+// translationPending ne vaut que pour une locale sans document — pas pour un
+// document dont la description est simplement absente
+const metaDescription = computed(() =>
+  page.value ? page.value.description ?? '' : t('placeholder.translationPending')
+)
+
 useSeoMeta({
   title: () => page.value?.title ?? t('nav.about'),
-  description: () => page.value?.description ?? t('placeholder.translationPending'),
+  description: metaDescription,
   ogTitle: () => page.value?.title ?? t('nav.about'),
-  ogDescription: () => page.value?.description ?? t('placeholder.translationPending')
+  ogDescription: metaDescription
 })
 </script>
 

@@ -12,7 +12,28 @@
   },
   "home": {
     "title": "Fédération Malienne de Combat au Corps à Corps",
-    "description": "Site officiel de la FMCCC."
+    "description": "Site officiel de la FMCCC.",
+    "ctaAbout": "Découvrir la fédération",
+    "ctaContact": "Nous contacter"
+  },
+  "contact": {
+    "description": "Contacter officiellement la FMCCC : affiliation d'un club, participation à une compétition, presse ou partenariats.",
+    "hq": {
+      "label": "Siège",
+      "value": "Bamako, Mali"
+    },
+    "phone": {
+      "label": "Téléphone / WhatsApp"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "pendingValue": "À confirmer",
+    "pendingNote": "Les coordonnées officielles détaillées de la fédération seront publiées prochainement sur cette page."
+  },
+  "footer": {
+    "tagline": "Fédération Malienne de Combat au Corps à Corps — Bamako, Mali",
+    "contact": "Nous contacter"
   },
   "placeholder": {
     "comingSoon": "Cette page est en cours de construction.",
