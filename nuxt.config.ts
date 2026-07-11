@@ -9,8 +9,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  // URL de prod via NUXT_SITE_URL (Vercel) — domaine .ml pas encore confirmé
+  // URL explicite : depuis le pré-rendu complet, canonicals/og:url/sitemap sont
+  // figés au build — sans elle, Vercel fournit VERCEL_URL (URL de déploiement
+  // hashée) et non le domaine public. NUXT_SITE_URL prendra le relais quand le
+  // domaine .ml sera branché.
   site: {
+    url: process.env.NUXT_SITE_URL || 'https://fmccc.vercel.app',
     name: 'FMCCC',
     defaultLocale: 'fr',
     // Câblé explicitement (recommandation nuxt-seo) plutôt que de compter sur la
