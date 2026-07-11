@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project state
 
-Phase 0 (Fondations) of `docs/roadmap.md` is **complete** (2026-07-10): the Nuxt 4 app is scaffolded, navigable in all three languages, and deployed at https://fm-3-c.vercel.app (auto-deploy from `main` via the Vercel git integration — every push to `main` goes to production). Next up is Phase 1 (institutional pages with real content). Pages are placeholders and `content/` has no files yet; collections are defined in `content.config.ts`.
+Phase 0 (Fondations) of `docs/roadmap.md` is **complete** (2026-07-10) and Phase 1 (Vitrine institutionnelle) is built and deployed at https://fmccc.vercel.app (auto-deploy from `main` via the Vercel git integration — every push to `main` goes to production; the pre-rename URL `fm-3-c.vercel.app` is dead, 404). The French About page (`content/pages/fr/about.md`) and the Contact page are live; EN/RU translations and real contact details await the president's validation pass. The site is noindex until he validates.
 
 Commands (pnpm, not npm):
 - `pnpm dev` — dev server on http://localhost:3000 (usually already running; check before starting another — the Nuxt CLI locks the dir, bypass with `NUXT_IGNORE_LOCK=1 PORT=3001` for a second diagnostic instance)

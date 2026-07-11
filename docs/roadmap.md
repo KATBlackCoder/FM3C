@@ -10,7 +10,7 @@
 - [x] Layout global + navigation (Accueil, Vitrine, Actualités, Clubs, Compétitions, Contact — cf. PRD Information Architecture)
 - [x] Déploiement Vercel branché sur le repo (preview deployments actifs dès ce stade, pour montrer l'avancement au président)
 
-**Jalon : ✅ atteint le 2026-07-10** — site vide mais navigable dans les 3 langues, en ligne sur https://fm-3-c.vercel.app (production auto-déployée depuis `main`).
+**Jalon : ✅ atteint le 2026-07-10** — site vide mais navigable dans les 3 langues, en ligne (production auto-déployée depuis `main` ; URL actuelle : https://fmccc.vercel.app, projet Vercel renommé le 2026-07-11).
 
 ## Phase 1 — Vitrine institutionnelle (FR-1, FR-2)
 

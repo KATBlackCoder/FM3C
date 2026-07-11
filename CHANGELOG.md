@@ -6,13 +6,23 @@ Journal des changements notables du site FMCCC, tenu par jalon de `docs/roadmap.
 
 ### Ajouté
 
+- **Page « À propos » (FR)** : mission, la discipline (Combat / Autodéfense, terminologie officielle HSIF), histoire (fondation mars 2026, première compétition à l'Acropole de Bamako), coopération Mali-Russie (ton neutre, à valider), structure, contact — rendue depuis `content/pages/fr/about.md` via Nuxt Content ; EN/RU affichent un repli « version à venir » en attendant la validation du texte FR par le président.
+- **Page « Contact »** : cartes siège (Bamako) / téléphone-WhatsApp / email — coordonnées « à confirmer » en attendant celles du président (FR-2).
+- **Footer global** enrichi : nom complet de la fédération + Bamako, lien « Nous contacter », dans les 3 langues.
+- **Accueil** : boutons d'appel à l'action vers À propos et Contact.
+- Documents sources de la fédération archivés dans `docs/sources/` (présentation HSIF FR 73 p., règlement HSIF 2023 EN, règlement FR à nettoyer, système de ceintures, sets d'autodéfense, logo) avec README de provenance.
 - Identité visuelle tirée du logo officiel (badge « Combat Corps à Corps / Mali ») : logo détouré en cercle (`public/logo.png`) intégré au header et au hero de l'accueil, favicon + apple-touch-icon régénérés depuis le badge.
 - Charte graphique : `primary` = or de l'anneau (`#D69318`, échelle `gold`), `secondary` = vert du drapeau (`#18B339`), neutre `stone` (gris chaud), liseré tricolore vert-jaune-rouge sous le header.
 - Polices : Oswald (titres, condensée athlétique) + Inter (corps) — les deux couvrent le cyrillique, contrairement à Public Sans qu'Inter remplace ; sous-ensembles `cyrillic` chargés via `@nuxt/fonts`.
 
 ### Modifié
 
-- Renommage du sigle de la fédération : **FM3C → FMCCC** (Fédération Malienne de Combat au Corps à Corps), partout dans le code, les traductions et la documentation. En russe, l'ancienne translittération « ФМ3К » est remplacée par le sigle latin « FMCCC » (à valider avec le président). L'URL de déploiement `fm-3-c.vercel.app` et le nom du projet Vercel restent inchangés pour l'instant.
+- Renommage du sigle de la fédération : **FM3C → FMCCC** (Fédération Malienne de Combat au Corps à Corps), partout dans le code, les traductions et la documentation. En russe, l'ancienne translittération « ФМ3К » est remplacée par le sigle latin « FMCCC » (à valider avec le président).
+- **URL de production : `fmccc.vercel.app`** (projet Vercel renommé le 2026-07-11 ; l'ancienne URL `fm-3-c.vercel.app` ne répond plus).
+
+### Corrigé
+
+- Requêtes Nuxt Content en erreur 500 sur Vercel (bindings natifs `better-sqlite3` incompatibles avec les fonctions Node 22/24, `nuxt/content#3689`) : bascule sur le connecteur `node:sqlite` natif — la page À propos affichait silencieusement son repli au lieu du contenu.
 
 ## Phase 0 — Fondations — 2026-07-10
 
