@@ -15,9 +15,9 @@ La **Fédération Malienne de Combat au Corps à Corps (FMCCC)** est l'instance 
 
 ## La discipline
 
-Le combat au corps à corps est un sport de combat complet, issu du *roukopachny boï* russe : il combine frappes contrôlées, projections, immobilisations et techniques de soumission. Les compétitions se disputent en deux formats : les combats, par catégorie de poids ou en catégorie absolue, et les démonstrations techniques.
+Le combat au corps à corps est un sport de combat complet, issu du *roukopachny boï* russe : il combine frappes contrôlées, projections, immobilisations et techniques de soumission. Les compétitions se disputent dans deux disciplines : le **Combat**, par catégorie de poids ou en catégorie absolue, et l'**Autodéfense**, où les athlètes démontrent des techniques de défense contre un adversaire armé ou non armé.
 
-La progression des pratiquants suit le système international de ceintures de la HSIF, la fédération internationale de la discipline, qui structure le parcours du débutant jusqu'aux plus hauts grades.
+La discipline est encadrée au niveau international par la HSIF (Hand-to-Hand Fighting Sport International Federation), dont les règles de compétition sont en vigueur depuis 2006. La progression des pratiquants suit son système international de ceintures, qui structure le parcours du débutant jusqu'aux plus hauts grades.
 
 ## Notre histoire
 
