@@ -22,12 +22,12 @@
 
 ## Phase 2 — Blog / Actualités (FR-3 à FR-5)
 
-- [ ] Liste des articles (tri antéchronologique, titre/date/extrait ou image)
-- [ ] Page de détail d'un article
-- [ ] Support compte-rendu de compétition avec photo optionnelle (FR-5)
-- [ ] Au moins 1 article réel publié (ex. compte-rendu de la compétition de mars 2026, si les photos sont récupérées — sinon version texte, cf. addendum §Historique)
+- [x] Liste des articles (tri antéchronologique, titre/date/extrait ou image) — états vides propres pour les locales sans article
+- [x] Page de détail d'un article (repli gracieux si slug inconnu ou traduction absente)
+- [x] Support compte-rendu de compétition avec photo optionnelle (FR-5) — champ `cover`, photo à ajouter quand reçue
+- [x] Au moins 1 article réel publié : compte-rendu texte de la compétition de mars 2026 (FR, en ligne le 2026-07-11 ; EN/RU après validation du FR)
 
-**Jalon** : un premier article réel est visible en ligne dans les 3 langues.
+**Jalon** : un premier article réel est visible en ligne dans les 3 langues — *FR en ligne, traductions EN/RU restantes (même lot que la page À propos).*
 
 ## Phase 3 — Annuaire des clubs (FR-6 à FR-8)
 
