@@ -47,6 +47,14 @@ For any non-trivial change (new page, component, content, config), work through 
 
 Trivial changes (typo, single i18n key, docs-only edit) may skip 2 and 6 — but never 4–5 when a rendered page is touched. Do not push to `main` without explicit approval: every push auto-deploys to production.
 
+## Problem-solving order
+
+When debugging or learning an API, consult sources in this order — do not jump to the web first:
+
+1. **Installed skills** (`docs/skills.md` lists them) and session memory — curated usage patterns and gotchas already hit on this project. Re-read the relevant skill reference *before* diagnosing "weird" behavior: the correct pattern is often documented there (e.g. `useAsyncData` getter keys in the nuxt-content skill).
+2. **The installed code** (`node_modules` — `.d.ts` types, component sources) — the ground truth for what the exact installed version accepts.
+3. **Web search** — only when an upstream bug or environment issue (Vercel, CI) is suspected, not to learn an API. Cite the issue found.
+
 ## Verification
 
 All verification of the running site (dev server routes, locale switching, rendering, key user journeys) must use the **Playwright MCP** (`playwright` server, added via `claude mcp add playwright npx @playwright/mcp@latest`) — not `curl`/`wget`/`node -e "fetch(...)"` workarounds. This matters especially for checking Cyrillic (RU) rendering and actual visual/interactive behavior, which a raw HTTP status check can't verify. If the Playwright MCP tools aren't available in a session (not yet loaded), say so explicitly rather than falling back to HTTP-only checks — ask for a session restart instead of approximating.
