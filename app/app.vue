@@ -44,7 +44,7 @@ useSeoMeta({
       </template>
 
       <template #body>
-        <AppNav />
+        <AppNav orientation="vertical" />
       </template>
     </UHeader>
 

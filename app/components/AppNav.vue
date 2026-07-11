@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+// 'vertical' pour le panneau mobile (slot #body du UHeader)
+const { orientation = 'horizontal' } = defineProps<{
+  orientation?: 'horizontal' | 'vertical'
+}>()
+
 const { t } = useI18n()
 const localePath = useLocalePath()
 
@@ -15,5 +20,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <UNavigationMenu :items="items" />
+  <UNavigationMenu
+    :items="items"
+    :orientation="orientation"
+  />
 </template>
