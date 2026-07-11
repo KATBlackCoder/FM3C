@@ -15,6 +15,7 @@
     "description": "Site officiel de la FMCCC."
   },
   "placeholder": {
-    "comingSoon": "Cette page est en cours de construction."
+    "comingSoon": "Cette page est en cours de construction.",
+    "translationPending": "Cette page sera bientôt disponible en français."
   }
 }
