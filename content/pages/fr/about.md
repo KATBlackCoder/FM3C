@@ -21,7 +21,7 @@ La discipline est encadrée au niveau international par la HSIF (Hand-to-Hand Fi
 
 ## Notre histoire
 
-Le projet de la FMCCC est né en mars 2026 à Bamako, aboutissement d'un travail de structuration de la discipline au Mali : l'association qui le porte a été créée, et la constitution officielle de la fédération est en cours. Dès mars 2026, la première compétition nationale a été organisée, du 22 au 24 à l'Acropole de Bamako, réunissant près de 70 athlètes — avec la participation, comme juge, d'un maître de sport russe, champion d'Afrique de la discipline.
+Le projet de la FMCCC est né en mars 2026 à Bamako, aboutissement d'un travail de structuration de la discipline au Mali : l'association qui le porte a été créée, et la constitution officielle de la fédération est en cours. Dès mars 2026, la première compétition nationale a été organisée, du 22 au 24 mars à l'Acropole de Bamako, réunissant près de 70 athlètes — avec la participation, comme juge, d'un maître de sport russe, champion d'Afrique de la discipline.
 
 Depuis, de nouveaux clubs rejoignent progressivement l'association à travers le pays, et la prochaine compétition nationale est en préparation.
 
