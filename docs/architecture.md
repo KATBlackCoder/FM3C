@@ -55,6 +55,16 @@ Points d'attention issus du PRD :
   - Champs "prose"/UI couverts par FR-12 — titre de la compétition, une éventuelle description, les libellés du filtre région, et le message "aucun club dans cette région" (FR-8) — **doivent** exister en FR/EN/RU, comme tout le reste du contenu public.
   - Concrètement : `title` dans `competitions/*.yml` est un objet/champ par langue (ex. `title: { fr: ..., en: ..., ru: ... }` ou 3 fichiers comme pour `blog/`) ; `location`/`region` restent des valeurs uniques.
 
+### Affichage du Calendrier — décisions UI (FR-9, FR-10)
+
+Comparatif détaillé (IJF, UWW, FIBA, IBJJF, World Athletics, FIFA/UEFA, UFC, ONE Championship) dans `docs/design-benchmark.md` §Calendrier. Décisions retenues pour le rendu :
+
+- **Ligne d'événement** : plage de dates compacte (`dateStart`–`dateEnd` affichés en un seul bloc, ex. "27 fév. - 1 mars") plutôt qu'une date unique — couvre explicitement le cas multi-jours de FR-9.
+- **Séparation à-venir / passées** : deux sections (ou un toggle simple) sur la même page, pas une route séparée — répond à "section dédiée" (FR-10) sans complexifier le routing.
+- **Lien vers le passé** : uniquement `blogRef` (compte-rendu éditorial) quand il existe, jamais un lien vers des résultats/classements structurés — cohérent avec le hors-scope §6 (pas de classements détaillés).
+- **Pas de filtres en V1** (continent/type/catégorie/style/âge) : volume de compétitions FMCCC trop faible pour les justifier ; tous les comparables qui les ont sont des fédérations mondiales à haut volume.
+- **Regroupement par mois** (façon FIBA/IBJJF) : amélioration d'affichage pure à envisager seulement si le calendrier dépasse ~8-10 entrées/an — n'impose aucun changement du schéma `competitions/*.yml` ci-dessus, donc pas un chantier d'architecture, juste un tri/groupement côté composant le moment venu.
+
 ## 4. Photos et vidéos
 
 **Photos : locales, co-localisées avec le contenu, pas de service cloud — y compris avec Nuxt Studio.**
