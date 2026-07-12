@@ -6,7 +6,8 @@ Journal des changements notables du site FMCCC, tenu par jalon de `docs/roadmap.
 
 ### Ajouté
 
-- **Page « À propos » (FR)** : mission, la discipline (Combat / Autodéfense, terminologie officielle HSIF), histoire (fondation mars 2026, première compétition à l'Acropole de Bamako), coopération Mali-Russie (ton neutre, à valider), structure, contact — rendue depuis `content/pages/fr/about.md` via Nuxt Content ; EN/RU affichent un repli « version à venir » en attendant la validation du texte FR par le président.
+- **Page « À propos »** : mission, la discipline (Combat / Autodéfense, terminologie officielle HSIF), histoire (première compétition à l'Acropole de Bamako), coopération Mali-Russie (ton neutre, à valider), structure, contact — rendue depuis `content/pages/{fr,en,ru}/about.md` via Nuxt Content, traduite dans les 3 langues le 2026-07-12 après validation du texte FR par le président.
+- **Compte-rendu de la première compétition nationale** traduit en EN/RU (`content/blog/{en,ru}/2026-03-premiere-competition-nationale.md`), même lot que la page À propos.
 - **Page « Contact »** : cartes siège (Bamako) / téléphone-WhatsApp / email — coordonnées « à confirmer » en attendant celles du président (FR-2).
 - **Footer global** enrichi : nom complet de la fédération + Bamako, lien « Nous contacter », dans les 3 langues.
 - **Accueil** : boutons d'appel à l'action vers À propos et Contact.
@@ -22,6 +23,7 @@ Journal des changements notables du site FMCCC, tenu par jalon de `docs/roadmap.
 
 ### Corrigé
 
+- **Statut juridique de la FMCCC** : le contenu affirmait que la fédération était déjà fondée en mars 2026 ; le président a corrigé le 2026-07-11 — ce qui existe légalement aujourd'hui est l'association fondatrice (même nom FMCCC conservé), la fédération est en cours de constitution. Wording ajusté sur la page À propos et l'article de blog, dans les 3 langues.
 - Requêtes Nuxt Content en erreur 500 sur Vercel (bindings natifs `better-sqlite3` incompatibles avec les fonctions Node 22/24, `nuxt/content#3689`) : bascule sur le connecteur `node:sqlite` natif — la page À propos affichait silencieusement son repli au lieu du contenu.
 
 ## Phase 0 — Fondations — 2026-07-10

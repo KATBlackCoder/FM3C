@@ -16,18 +16,18 @@
 
 - [x] Page À propos : mission, histoire, structure, coopération Mali-Russie (rédigée en FR — ton à valider avec le président — `[ASSUMPTION]` PRD §9)
 - [x] Contacts officiels visibles (page + footer global) — coordonnées réelles (téléphone/email) à fournir par le président, placeholders explicites en attendant
-- [ ] Contenu FR rédigé, EN + RU traduits (EN/RU après validation du FR par le président)
+- [x] Contenu FR rédigé, EN + RU traduits (EN/RU après validation du FR par le président)
 
-**Jalon** : le président peut visiter le site et se reconnaître dans la présentation de la fédération.
+**Jalon : ✅ atteint le 2026-07-12** — le président peut visiter le site et se reconnaître dans la présentation de la fédération, dans les 3 langues.
 
 ## Phase 2 — Blog / Actualités (FR-3 à FR-5)
 
 - [x] Liste des articles (tri antéchronologique, titre/date/extrait ou image) — états vides propres pour les locales sans article
 - [x] Page de détail d'un article (repli gracieux si slug inconnu ou traduction absente)
 - [x] Support compte-rendu de compétition avec photo optionnelle (FR-5) — champ `cover`, photo à ajouter quand reçue
-- [x] Au moins 1 article réel publié : compte-rendu texte de la compétition de mars 2026 (FR, en ligne le 2026-07-11 ; EN/RU après validation du FR)
+- [x] Au moins 1 article réel publié : compte-rendu texte de la compétition de mars 2026 (FR, en ligne le 2026-07-11 ; EN/RU traduits le 2026-07-12)
 
-**Jalon** : un premier article réel est visible en ligne dans les 3 langues — *FR en ligne, traductions EN/RU restantes (même lot que la page À propos).*
+**Jalon : ✅ atteint le 2026-07-12** — un premier article réel est visible en ligne dans les 3 langues.
 
 ## Phase 3 — Annuaire des clubs (FR-6 à FR-8)
 
